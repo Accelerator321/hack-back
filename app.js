@@ -68,6 +68,28 @@ app.get('/folders/:email',async(req,res)=>{
     res.status(500).send(err);
   }
 })
+const user = require("./model/userModel.js");
+app.get('/verify',async (req,res)=>{
+  try {
+    var token = req.get("Authorization");
+    if (token) {
+      token = token.split(" ")[1];
+      // console.log(token);
+      var decoded = jwt.verify(token, process.env.jwt_secret);
+      if (decoded.email) {
+        let use = await user.find({email:decoded.email});
+        res.status(200).json(use[0]);
+      } else {
+        res.sendStatus(401);
+      }
+    } else {
+      res.sendStatus(401);
+    }
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(401);
+  }
+})
 
 app.listen(PORT, () => {
   console.log(`Server started at ${PORT}`);
