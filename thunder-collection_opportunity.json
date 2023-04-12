@@ -1,0 +1,291 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "opportunity",
+    "dateExported": "2023-03-20T15:17:16.023Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5bae562b-9d59-4f5e-ac62-f077aa8f7cca",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "get item by id",
+            "url": "localhost:3000/jobs/641737797c3dee5943b95135",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-19T14:22:45.664Z",
+            "modified": "2023-03-20T06:39:00.378Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fa2f9178-df16-4926-92da-c225bf81aec2",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "update an item",
+            "url": "localhost:3000/jobs/641737797c3dee5943b95135",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-03-19T14:22:45.715Z",
+            "modified": "2023-03-20T05:57:55.044Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "topi4",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "tags",
+                        "value": "python c++",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "skills",
+                        "value": "java c"
+                    },
+                    {
+                        "name": "requirements",
+                        "value": "btech 20205 "
+                    },
+                    {
+                        "name": "requirements",
+                        "value": "hbtu kanpur"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "d:\\opportunity\\sample.jpg",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlveW8iLCJpYXQiOjE2NzkyMzc0NjN9.4Ra_OzZycHhOQ6S1CYaDD-zSw_Xn22iY5hsW4QAcs9o"
+            },
+            "tests": []
+        },
+        {
+            "_id": "520369e6-d16a-4a8b-84b1-b30876057bda",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "delete an an item",
+            "url": "localhost:3000/jobs/6409f7ae624a52f59729c2e6",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-03-19T14:22:45.717Z",
+            "modified": "2023-03-19T15:08:36.795Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlveW8iLCJpYXQiOjE2NzkyMzc0NjN9.4Ra_OzZycHhOQ6S1CYaDD-zSw_Xn22iY5hsW4QAcs9o"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bc2033b7-ba84-43a1-817b-692e5d25a54c",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "create new admin",
+            "url": "localhost:3000/admin/newadmin",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-19T14:22:45.718Z",
+            "modified": "2023-03-19T14:22:45.718Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \n    \"name\": \"utsav\",\n    \"email\": \"hello@gmail.com\",\n    \"password\": \"123456\"\n    \n  }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGdtYWlsLmNvbSIsImlhdCI6MTY3OTIxNjcyNH0.1b45rcQgYHCOEBPHGP6dqqsTicjgmwukBORs6Sw0Cig"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a9f7ad11-019c-416c-8c11-8ad032e9da49",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "post a job",
+            "url": "localhost:3000/jobs/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-19T14:22:45.719Z",
+            "modified": "2023-03-20T08:59:00.031Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "sde intern 19"
+                    },
+                    {
+                        "name": "company",
+                        "value": "crackdsa"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "intern"
+                    },
+                    {
+                        "name": "lastdate",
+                        "value": "03/19/2023"
+                    },
+                    {
+                        "name": "stipend",
+                        "value": "20000"
+                    },
+                    {
+                        "name": "exclusive",
+                        "value": "true"
+                    },
+                    {
+                        "name": "live",
+                        "value": "true"
+                    },
+                    {
+                        "name": "location",
+                        "value": "kanpur"
+                    },
+                    {
+                        "name": "duration",
+                        "value": "3 months"
+                    },
+                    {
+                        "name": "url",
+                        "value": "crackdsa.com"
+                    },
+                    {
+                        "name": "tags",
+                        "value": "webdev backend frontend"
+                    },
+                    {
+                        "name": "skills",
+                        "value": "python c++"
+                    },
+                    {
+                        "name": "requirements",
+                        "value": "garduate 2025"
+                    },
+                    {
+                        "name": "requirements",
+                        "value": "student of hbtu kanpur"
+                    },
+                    {
+                        "name": "startdate",
+                        "value": "05/11/2022"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "d:\\opportunity\\sample.jpg"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlveW8iLCJpYXQiOjE2NzkyMzc0NjN9.4Ra_OzZycHhOQ6S1CYaDD-zSw_Xn22iY5hsW4QAcs9o"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4f55a933-c70a-427f-be21-458d22573e83",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "get by filter",
+            "url": "localhost:3000/jobs/?skills=eact",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-03-19T14:22:45.722Z",
+            "modified": "2023-03-19T16:59:28.955Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tags",
+                    "value": "back end",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "skills",
+                    "value": "eact",
+                    "isPath": false
+                },
+                {
+                    "name": "exclusive",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "live",
+                    "value": "false",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d860be97-7226-4920-90a4-3047c19c77ef",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "admin login",
+            "url": "localhost:3000/admin/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-03-19T14:22:45.723Z",
+            "modified": "2023-03-19T14:51:03.054Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "yoyo"
+                    },
+                    {
+                        "name": "password",
+                        "value": "xz"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7515104a-7c54-45df-ba53-8a5b395e0355",
+            "colId": "a3b4d8ee-906d-421b-b084-9dfac10fe4da",
+            "containerId": "",
+            "name": "refresh route",
+            "url": "localhost:3000/jobs/refresh",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-03-20T06:55:26.343Z",
+            "modified": "2023-03-20T15:07:53.049Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlveW8iLCJpYXQiOjE2NzkyMzc0NjN9.4Ra_OzZycHhOQ6S1CYaDD-zSw_Xn22iY5hsW4QAcs9o"
+            },
+            "tests": []
+        }
+    ]
+}
